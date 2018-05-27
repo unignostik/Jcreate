@@ -1,2 +1,2 @@
 # Jcreate
-Simple, easy way to translate Python dictionaries into JSON files
+Simple, easy way to translate Python dictionaries into simple JSON format.
