@@ -4,13 +4,11 @@ import os
 class Jcreate(str):
 
     def __init__(self, name):  # create JSON file with object of specified name
-
         f = open(os.getcwd()+"/jcreate.json", 'w')
         f.write("{\n\t \"" + str(name) + "\": [\n")  #
         f.close()
 
     def addobject(self, dict):  # add an object to JSON file
-
         f = open(os.getcwd()+"/jcreate.json", 'a')
         f.write("\t\t{\n\t\t\t")
         for entry in dict:  # iterate though dictionary, separate last element as doesn't require comma after value
